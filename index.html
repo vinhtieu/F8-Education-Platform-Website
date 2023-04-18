@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./asset/css/reset.css" />
-    <link rel="stylesheet" href="./asset/scss/main.css">
+    <link rel="stylesheet" href="./asset/scss/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,46 +23,44 @@
   </head>
   <body>
     <!--============== HEADER ==============-->
-    <header class="header">
+    <header class="header sticky">
       <div class="content">
-        <!--|| NAVBAR -->
-        <nav class="navbar">
-          <!-- logo -->
-          <div class="navbar__logo">
-            <a href="#!" class="lesson-logo" alt="lesson logo">
-              <img src="./asset\image\logo\Lesson. (D).svg" alt="" />
-            </a>
-          </div>
-          <!-- navigation -->
-          <div class="navbar__nav">
-            <div class="nav">
-              <ul class="nav__list">
-                <li class="nav__items">
-                  <a href="#!" class="nav__link">Home</a>
-                </li>
-                <li class="nav__items">
-                  <a href="#!" class="nav__link">Courses</a>
-                </li>
-                <li class="nav__items">
-                  <a href="#!" class="nav__link">Pricing</a>
-                </li>
-                <li class="nav__items">
-                  <a href="" class="nav__link">Reviews</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- button -->
-          <div class="navbar__actions">
-            <a href="" class="btn actions__btn" alt="">Sign Up</a>
-          </div>
+        <!-- logo -->
+        <div class="header__logo">
+          <a href="#!" alt="">
+            <img class="lesson-logo" src="./asset\image\logo\Lesson. (D).svg" alt="lesson logo" />
+          </a>
+        </div>
+        <!-- navigation -->
+        <nav class="header__nav">
+          <ul class="nav">
+            <li class="nav__items">
+              <a href="#!" class="nav__link">Home</a>
+            </li>
+            <li class="nav__items">
+              <a href="#!" class="nav__link">Courses</a>
+            </li>
+            <li class="nav__items">
+              <a href="#!" class="nav__link">Pricing</a>
+            </li>
+            <li class="nav__items">
+              <a href="" class="nav__link">Reviews</a>
+            </li>
+          </ul>
         </nav>
-        <!--|| HERO -->
-        <div class="hero">
+        <!-- button -->
+        <div class="header__actions">
+          <a href="#!" class="btn actions__btn" alt="">Sign Up</a>
+        </div>
+      </div>
+    </header>
+    <!--============== MAIN ==============-->
+    <main>
+      <!--|| HERO -->
+      <div class="hero">
+        <div class="content">
           <div class="hero__wrapper">
-            <!-- <img class="img" src="/Education Platform Website/asset/image/people/logan-isbell-F5b7_OD4IMA-unsplash (1).jpg" alt="" /> -->
             <img class="hero__img" src="./asset\image\people\arif-angga-ibrahim-Xq3qoiLFWBE-unsplash.jpg" alt="" />
-            <!-- <img class="img" src="/asset\image\people\nana-o-LPaeGH0xHgw-unsplash.jpg" alt="" /> -->
             <div class="hero__card">
               <div class="card">
                 <div class="card__section">
@@ -92,11 +90,10 @@
               </div>
             </div>
           </div>
-
           <!--|| INFO -->
           <div class="info">
             <!-- title -->
-            <h1 class="info__title">Learn without limits and spread knowledge.</h1>
+            <h1 class="title">Learn without limits and spread knowledge.</h1>
             <!-- desc -->
             <p class="info__desc">Build new skills for that “this is my year” feeling with courses, certificates, and degrees from world-class universities and companies.</p>
             <!-- actions -->
@@ -128,15 +125,14 @@
           </div>
         </div>
       </div>
-    </header>
-    <!--============== MAIN ==============-->
-    <main>
       <!--|| COURSES -->
       <section class="courses">
         <div class="content">
           <div class="courses__section">
             <div class="courses__info">
-              <h2 class="courses__title">Our popular courses</h2>
+              <!-- title -->
+              <a href="#!"><h2 class="title">Our popular courses</h2></a>
+              <!-- description -->
               <p class="courses__desc">Build new skills with new trendy courses and shine for the next future career.</p>
             </div>
             <div class="courses__pagination">
@@ -149,17 +145,22 @@
               <!-- Basic web design -->
               <div class="card">
                 <div class="card__section">
-                  <img class="card__thumb" src="./asset\image\thumb\alvaro-bernal-P1oXvBJi_DQ-unsplash.jpg" alt="" />
+                  <a href="#!">
+                    <img class="card__thumb" src="./asset\image\thumb\alvaro-bernal-P1oXvBJi_DQ-unsplash.jpg" alt="" />
+                  </a>
                 </div>
                 <div class="card__section">
+                  <!-- header -->
                   <div class="card__header">
-                    <h3 class="card__title">Basic web design</h3>
+                    <a href=""><h3 class="card__title">Basic web design</h3></a>
                     <div class="card__rating">
                       <img src="./asset\image\icon\Star 6.svg" alt="" class="rating__icon" />
                       <div class="rating__number">4.5</div>
                     </div>
                   </div>
+                  <!-- body -->
                   <p class="card__body">Get the best course, gain knowledge and shine for your future career.</p>
+                  <!-- footer -->
                   <div class="card__footer">
                     <p class="card__price">$120.75</p>
                     <div class="btn btn--primary btn--small">Book Now</div>
@@ -173,7 +174,7 @@
                 </div>
                 <div class="card__section">
                   <div class="card__header">
-                    <h3 class="card__title">UI/UX design</h3>
+                    <a href=""><h3 class="card__title">UI/UX design</h3></a>
                     <div class="card__rating">
                       <img src="/asset\image\icon\Star 6.svg" alt="" class="rating__icon" />
                       <div class="rating__number">4.5</div>
@@ -192,14 +193,18 @@
                   <img src="./asset\image\thumb\komarov-egor-Lc2R_w0zvtA-unsplash.jpg" alt="" class="card__thumb" />
                 </div>
                 <div class="card__section">
+                  <!-- header -->
                   <div class="card__header">
-                    <h3 class="card__title">Web App design</h3>
+                    <a href=""><h3 class="card__title">Web App design</h3></a>
                     <div class="card__rating">
                       <img src="/asset\image\icon\Star 6.svg" alt="" class="rating__icon" />
                       <div class="rating__number">4.5</div>
                     </div>
                   </div>
+                  <!-- body -->
                   <p class="card__body">Get the best course, gain knowledge and shine for your future career.</p>
+                  <!-- footer -->
+
                   <div class="card__footer">
                     <p class="card__price">$120.75</p>
                     <div class="btn btn--secondary btn--small">Book Now</div>
@@ -241,7 +246,7 @@
           </div>
           <div class="features__info">
             <div class="info">
-              <h2 class="info__subtitle">Learner outcomes through our awesome platform</h2>
+              <h2 class="title">Learner outcomes through our awesome platform</h2>
               <p class="info__desc">87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
               <p class="info__desc">Lesson Impact Report (2022)</p>
               <a class="btn btn--primary btn--small">Sign Up</a>
@@ -253,7 +258,7 @@
       <section class="cta">
         <div class="content">
           <div class="cta__info">
-            <h2 class="cta__subtitle">Take the next step toward your personal and professional goals with Lesson.</h2>
+            <h2 class="title">Take the next step toward your personal and professional goals with Lesson.</h2>
             <p class="cta__desc">Take the next step toward. Join now to receive personalized and more recommendations from the full Coursera catalog.</p>
             <a class="btn btn--primary btn--small">John Now</a>
           </div>
@@ -264,11 +269,10 @@
         </div>
       </section>
       <!--|| BLOG -->
-
       <section class="blog">
         <div class="content">
           <div class="blog__section">
-            <h2 class="blog__subtitle">Our blog</h2>
+            <h2 class="title">Our blog</h2>
             <p class="blog__desc">Read our regular travel blog and know the latest update of tour and travel</p>
           </div>
           <div class="blog__section">
