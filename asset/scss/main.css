@@ -28,10 +28,6 @@ html {
   font-family: var(--ff-primary);
 }
 
-body {
-  height: 100vh;
-}
-
 a {
   cursor: pointer;
 }
@@ -114,6 +110,11 @@ ul {
   position: sticky;
   top: -28px;
   z-index: 1;
+}
+
+.lesson-logo {
+  width: 5.3125rem;
+  height: 2.125rem;
 }
 
 .header {
@@ -380,22 +381,22 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.testimonial__section {
+.testimonial .carousel__section {
   display: flex;
 }
-.testimonial__section:first-child {
+.testimonial .carousel__section:first-child {
   flex-direction: column;
 }
-.testimonial__section:last-child {
+.testimonial .carousel__section:last-child {
   flex-direction: row;
 }
-.testimonial__avatar {
+.testimonial .carousel__avatar {
   width: 70px;
   height: 70px;
   border-radius: 50%;
   margin-bottom: 1.125rem;
 }
-.testimonial__name {
+.testimonial .carousel__name {
   font-family: var(--ff-secondary);
   font-weight: var(--fw-bold);
   font-size: 24px;
@@ -404,18 +405,18 @@ ul {
   margin-bottom: 0.25rem;
   color: var(--c-neutral-100);
 }
-.testimonial__intro {
+.testimonial .carousel__intro {
   font-weight: var(--fw-regular);
   font-size: 14px;
   line-height: 26px;
   /* identical to box height, or 186% */
   color: var(--c-neutral-400);
 }
-.testimonial__icon {
+.testimonial .carousel__icon {
   width: 30px;
   height: 28px;
 }
-.testimonial__desc {
+.testimonial .carousel__desc {
   display: inline-block;
   width: 740px;
   font-weight: var(--fw-regular);
